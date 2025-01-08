@@ -46,4 +46,26 @@ def is_prime(number):
 print(is_prime(7))
 print(is_prime(10))
 
+#
+def count_vowels(text):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
 
+print(count_vowels("I love Python programming"))
+
+#
+def find_max_in_list(numbers):
+    return max(numbers)
+
+print(find_max_in_list([3, 5, 2, 9, 1]))
+
+#
+def conver_temperature(temperature, scale):
+    if scale == "C":
+        return (temperature * 9/5) + 32
+    elif scale == "F":
+        return (temperature)
